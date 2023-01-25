@@ -65,6 +65,7 @@ mv $QT_ROOT/Qt $QT_ROOT/Qt_orig
 ## to patch qmake and QtCore
 go run ./patch.go
 
+## fails on qt5.15 and later
 gzip -n ./${QT_VERSION}/clang_64/lib/QtWebEngineCore.framework/Versions/Current/QtWebEngineCore
 
 du -sh ./5*
